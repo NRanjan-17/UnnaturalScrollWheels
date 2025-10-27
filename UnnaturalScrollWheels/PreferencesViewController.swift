@@ -76,7 +76,7 @@ class PreferencesViewController: NSViewController {
     }
     
     @IBAction func openHelp(_ sender: Any) {
-        let url = URL(string: "https://github.com/ther0n/UnnaturalScrollWheels/blob/master/README.md")!
+        let url = URL(string: "https://github.com/NRanjan-17/UnnaturalScrollWheels/blob/master/README.md")!
         NSWorkspace.shared.open(url)
     }
     

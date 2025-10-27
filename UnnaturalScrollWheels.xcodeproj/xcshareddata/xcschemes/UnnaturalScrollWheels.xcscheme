@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1230"
+   LastUpgradeVersion = "2600"
    version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -10,7 +10,7 @@
             ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
             <ActionContent
                title = "Run Script"
-               scriptText = "# Type a script or drag a script file from your workspace to insert its path.&#10;PLIST=&quot;${PROJECT_DIR}/${INFOPLIST_FILE}&quot;&#10;PLB=/usr/libexec/PlistBuddy&#10;LAST_NUMBER=$($PLB -c &quot;Print CFBundleVersion&quot; &quot;$PLIST&quot;)&#10;NEW_VERSION=$(($LAST_NUMBER + 1))&#10;$PLB -c &quot;Set :CFBundleVersion $NEW_VERSION&quot; &quot;$PLIST&quot;&#10;">
+               scriptText = "# Type a script or drag a script file from your workspace to insert its path.&#10;PLIST=&quot;${PROJECT_DIR}/${INFOPLIST_FILE}&quot;&#10;PLB=/usr/libexec/PlistBuddy&#10;LAST_NUMBER=$($PLB -c &quot;Print CFBundleVersion&quot; &quot;$PLIST&quot;)&#10;NEW_VERSION=$(($LAST_NUMBER) + 1)&#10;$PLB -c &quot;Set :CFBundleVersion $NEW_VERSION&quot; &quot;$PLIST&quot;&#10;">
                <EnvironmentBuildable>
                   <BuildableReference
                      BuildableIdentifier = "primary"
@@ -49,7 +49,7 @@
       </Testables>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Debug"
+      buildConfiguration = "Release"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"

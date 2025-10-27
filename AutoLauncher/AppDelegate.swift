@@ -4,7 +4,7 @@ import Cocoa
 class AutoLauncherAppDelegate: NSObject, NSApplicationDelegate {
     
     struct Constants {
-        static let mainAppBundleID = "com.theron.UnnaturalScrollWheels"
+        static let mainAppBundleID = "com.nranjan-17.UnnaturalScrollWheels"
     }
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {

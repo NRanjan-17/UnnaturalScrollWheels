@@ -29,7 +29,7 @@ class MenuBarItem {
     
     private func add() {
         statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
-        statusItem?.button?.title = "⭥"
+        statusItem?.button?.title = "􀺱"
         statusItem?.menu = self.menu
     }
     
