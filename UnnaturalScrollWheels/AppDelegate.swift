@@ -23,6 +23,8 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
             UserDefaults.standard.set(false, forKey: "FirstLaunch")
         }
         self.statusItem.menu = self.menu
+        preferencesMenuItem?.image = NSImage(systemSymbolName: "gear", accessibilityDescription: "Preferences")
+        quitMenuItem?.image = NSImage(systemSymbolName: "power", accessibilityDescription: "Quit")
         refresh()
         if AXIsProcessTrusted() {
             ScrollInterceptor.shared.interceptScroll()
