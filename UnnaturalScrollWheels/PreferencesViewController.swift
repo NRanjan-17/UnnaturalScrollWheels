@@ -24,6 +24,16 @@ class PreferencesViewController: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.view.window?.titlebarAppearsTransparent = true
+        let visualEffectView = NSVisualEffectView()
+        visualEffectView.material = .menu
+        visualEffectView.blendingMode = .behindWindow
+        visualEffectView.state = .active
+        visualEffectView.frame = self.view.bounds
+        visualEffectView.autoresizingMask = [.width, .height]
+        self.view.addSubview(visualEffectView, positioned: .below, relativeTo: nil)
+        
         invertVerticalScroll?.takeIntValueFrom(Options.shared.invertVerticalScroll)
         invertHorizontalScroll?.takeIntValueFrom(Options.shared.invertHorizontalScroll)
         disableHorizontalScroll?.takeIntValueFrom(Options.shared.disableShiftHorizontalScroll)
