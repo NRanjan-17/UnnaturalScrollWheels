@@ -37,7 +37,7 @@ class MenuBarItem {
         }
 
         let newStatusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
-        newStatusItem.button?.title = "⭥"
+        newStatusItem.button?.title = "􀺱"
         newStatusItem.menu = menu
         statusItem = newStatusItem
     }
